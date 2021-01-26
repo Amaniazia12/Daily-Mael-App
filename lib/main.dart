@@ -1,6 +1,7 @@
+//ctrl+shift+R for wrap
+import 'package:daily_mael/screens/taps_screen.dart';
 import 'package:flutter/material.dart';
 
-import 'screens/Categories_screen.dart';
 import './screens/mealDetails_screen.dart';
 import 'screens/meals_screen.dart';
 void main() {
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
            TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.bold,
+            color:Colors.black
               ),
            ),
         ),
@@ -46,10 +48,10 @@ class MyApp extends StatelessWidget {
       //,home: CategoryScreen(),
      initialRoute: '/',
       routes: {
-        '/':(ctx)=> CategoryScreen(),
+        '/':(ctx)=> Taps_screen(),
         MealScreen.routeName:(ctx)=> MealScreen(),
         MealDetailsScreen.rouatName:(ctx)=>MealDetailsScreen(),
-      },
+      }, 
     );
   }
 }

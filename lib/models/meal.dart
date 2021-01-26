@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 
 enum Complexity {
@@ -15,6 +16,7 @@ enum Affordability {
 class Meal {
   final String id;
   final List<String> categories;
+  final Color color;
   final String title;
   final String imageUrl;
   final List<String> ingredients;
@@ -29,6 +31,7 @@ class Meal {
 
   const Meal({
     @required this.id,
+    this.color,
     @required this.categories,
     @required this.title,
     @required this.imageUrl,

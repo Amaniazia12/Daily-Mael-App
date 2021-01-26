@@ -3,21 +3,23 @@ import 'package:flutter/material.dart';
 
 import '../screens/meals_screen.dart';
 class CategoryIteam extends StatelessWidget {
+
   final String title;
   final Color color;
   final String id;
   
-  CategoryIteam(this.id,this.title,this.color);
+  CategoryIteam
+  (
+    this.id,
+    this.title,
+    this.color
+ );
   void selectCategory (BuildContext cont){
     Navigator.of(cont).pushNamed(
-      MealScreen.routeName,
-      arguments: {
-        'id':id,
-        'title':title,
-        //'color':color
+      MealScreen.routeName, 
+      arguments:id,
+      );
       }
-  );
-  }
   @override
   Widget build(BuildContext context) {
     return InkWell(

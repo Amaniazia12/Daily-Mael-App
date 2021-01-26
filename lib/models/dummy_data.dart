@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import './models/Category.dart';
-import './models/meal.dart';
+import 'Category.dart';
+import 'meal.dart';
 const DUMMY_CATEGORIES = const [
   Category(
     id: 'c1',
@@ -21,7 +21,7 @@ const DUMMY_CATEGORIES = const [
   Category(
     id: 'c4',
     title: 'German',
-    color: Colors.amber,
+    color: Colors.cyanAccent,
   ),
   Category(
     id: 'c5',
@@ -32,6 +32,11 @@ const DUMMY_CATEGORIES = const [
     id: 'c6',
     title: 'Exotic',
     color: Colors.green,
+  ),
+  Category(
+    id: 'c7',
+    title: 'Asian',
+    color: Colors.deepOrange,
   ),
   Category(
     id: 'c8',
@@ -47,6 +52,11 @@ const DUMMY_CATEGORIES = const [
     id: 'c10',
     title: 'Summer',
     color: Colors.teal,
+  ),
+  Category(
+    id: 'c11',
+    title: 'Summer',
+    color: Colors.purpleAccent,
   ),
 ];
 
