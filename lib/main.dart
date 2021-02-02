@@ -1,4 +1,6 @@
 //ctrl+shift+R for wrap
+import 'package:daily_mael/screens/Filter_Screen.dart';
+import 'package:daily_mael/screens/Setting_Screen.dart';
 import 'package:daily_mael/screens/taps_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData( 
         primarySwatch: Colors.cyan,
-        accentColor: Colors.redAccent,
+        accentColor: Colors.grey[600],
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(
            bodyText1: 
@@ -48,9 +50,11 @@ class MyApp extends StatelessWidget {
       //,home: CategoryScreen(),
      initialRoute: '/',
       routes: {
-        '/':(ctx)=> Taps_screen(),
+        '/':(ctx)=> TapsScreen(),
         MealScreen.routeName:(ctx)=> MealScreen(),
         MealDetailsScreen.rouatName:(ctx)=>MealDetailsScreen(),
+        FilterScreen.routName:(ctx)=>FilterScreen(),
+        SettingScreen.routName:(ctx)=>SettingScreen(),
       }, 
     );
   }

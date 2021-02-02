@@ -5,10 +5,6 @@ class CategoryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold (
-     appBar: AppBar(
-       title: const Text('Daily Mael'),
-       backgroundColor: Theme.of(context).primaryColor,
-     ) ,
      body: GridView(
        gridDelegate: 
         SliverGridDelegateWithMaxCrossAxisExtent(
